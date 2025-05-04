@@ -2,7 +2,7 @@ import githubIcon from '../assets/icons/github.svg';
 
 function Footer() {
   return (
-    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
+    <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4 mt-auto">
       <aside className="grid-flow-col items-center">
         <svg
           width="36"

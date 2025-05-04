@@ -1,20 +1,26 @@
-import Header from './components/Header.tsx'
-import Footer from './components/Footer.tsx'
+// components
+//pages
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Landing from './pages/Landing';
+import Game from './pages/Game'; // Import the Play component
 
 function App() {
-
   return (
-    <div className="App flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-grow">
-        <div className="container mx-auto p-4">
-          <h1 className="text-3xl font-bold">Welcome to the App</h1>
-          <p className="mt-4">This is a simple app using React and Tailwind CSS.</p>
-        </div>
-      </main>
-      <Footer />
-    </div>
-  )
+    <Router>
+      <div className="App flex flex-col h-screen">
+        <Header />
+        <main className="flex-grow h-full">
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/play" element={<Game />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
 }
 
 export default App
