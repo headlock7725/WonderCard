@@ -3,7 +3,8 @@ import Card from "../components/Card";
 
 function Game() {
   return (
-    <div className="grid grid-cols-3 grid-rows-3 h-full w-full bg-base-200">
+    //TODO: add a countdown
+    < div className="grid grid-cols-3 grid-rows-3 h-full w-full bg-base-200" >
       <div className="topic col-start-2 justify-self-center self-center">
         <h3 className="text-3xl leading-9 font-bold">
           Thema: Wissenschaftler
@@ -21,7 +22,7 @@ function Game() {
         <input type="text" placeholder="Was kann das sein?" className="input input-neutral h-12 w-100" />
         <a className="btn btn-flex btn-primary h-12">Wonder!</a>
       </div>
-    </div>
+    </div >
   );
 }
 
