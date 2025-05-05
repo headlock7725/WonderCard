@@ -11,7 +11,9 @@ function Landing() {
           <p className="py-6">
             Unleash your inner detective and dive into a world of mystery and wordplay! In WonderCard, your mission is to crack the hidden category and uncover the secret words!
           </p>
-          <button className="btn btn-primary">Start Playing</button>
+          <a href="/play">
+            <button className="btn btn-primary">Start Playing</button>
+          </a>
         </div>
       </div>
     </div>
