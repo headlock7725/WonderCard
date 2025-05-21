@@ -1,10 +1,10 @@
 
-function ActiveCard({ title, image }: { title: string; image: string }) {
+function ActiveCard({ title, image, url }: { title: string; image: string; url: string }) {
   return (
-    <div className="flex h-full w-full flex-col justify-center items-center gap-6">
+    <a href={url} target="_blank" className="flex h-full w-full flex-col justify-center items-center gap-6">
       <img src={image} className="aspect-square max-w-32" alt={title} />
       <p className="text-lg leading-7 font-semibold">{title}</p>
-    </div>
+    </a>
   );
 }
 
@@ -22,19 +22,21 @@ function Card({
   isActive = false,
   title = "",
   image = "",
+  url = "",
 }: {
   isActive?: boolean;
   title?: string;
   image?: string;
+  url?: string;
 }) {
   const content = isActive ? (
-    <ActiveCard title={title} image={image} />
+    <ActiveCard title={title} image={image} url={url} />
   ) : (
     <InactiveCard />
   );
 
   return (
-    <div className="shadow-gray-500 shadow-md white aspect-[24/36] rounded-xl max-w-64">
+    <div className="shadow-gray-500 shadow-md white aspect-[24/36] rounded-xl max-w-64 max-h-full">
       {content}
     </div>
   );

@@ -7,28 +7,28 @@
           "title": "Albert Einstein",
           "description": "Theoretical physicist known for the theory of relativity.",
           "image": "img/sets/physicists/einstein.png",
-          "link": "https://en.wikipedia.org/wiki/Albert_Einstein",
+          "url": "https://en.wikipedia.org/wiki/Albert_Einstein",
           "shown": false
         },
         {
           "title": "Marie Curie",
           "description": "Pioneering physicist and chemist who conducted research on radioactivity.",
           "image": "img/sets/physicists/curie.png",
-          "link": "https://en.wikipedia.org/wiki/Marie_Curie",
+          "url": "https://en.wikipedia.org/wiki/Marie_Curie",
           "shown": true
         },
         {
           "title": "Isaac Newton",
           "description": "Mathematician, physicist, astronomer, and author who is widely recognized as one of the most influential scientists of all time.",
           "image": "img/sets/physicists/newton.png",
-          "link": "https://en.wikipedia.org/wiki/Isaac_Newton",
+          "url": "https://en.wikipedia.org/wiki/Isaac_Newton",
           "shown": true
         },
         {
           "title": "Niels Bohr",
           "description": "Physicist who made foundational contributions to understanding atomic structure and quantum theory.",
           "image": "img/sets/physicists/bohr.png",
-          "link": "https://en.wikipedia.org/wiki/Niels_Bohr",
+          "url": "https://en.wikipedia.org/wiki/Niels_Bohr",
           "shown": true
         }
       ]
