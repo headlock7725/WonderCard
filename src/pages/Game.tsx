@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "../components/Card";
+import SuccessPopup from "../components/ResultPopup";
 import content from "../config/content.json";
 
 function Game() {
   const [cards, setCards] = useState(content.topics[0].cards);
   const [inputValue, setInputValue] = useState("");
+
+  const [showSuccessPopup, setShowSuccessPopup] = useState(false);
 
   const handleWonderClick = () => {
     const normalize = (str: string) => str.trim().toLowerCase();
@@ -16,12 +19,19 @@ function Game() {
         const input = normalize(inputValue);
 
         const isMatch = !card.shown && (input === firstName || input === lastName || input === fullName);
-        return isMatch ? { ...card, shown: true } : card; // if there is a match, return thard with shown set to true
+        return isMatch ? { ...card, shown: true } : card;
       })
     );
 
     setInputValue(""); // Clear the input after checking
   };
+
+  useEffect(() => {
+    const allGuessed = cards.every((card) => card.shown);
+    if (allGuessed) {
+      setShowSuccessPopup(true);
+    }
+  }, [cards]);
 
 
   return (
@@ -41,6 +51,9 @@ function Game() {
           />
         ))}
       </div>
+
+      {showSuccessPopup && < SuccessPopup />}
+
 
       <div className="resultInputs flex flex-row gap-x-5 conte col-start-2 row-start-3 justify-self-center self-center">
         <input

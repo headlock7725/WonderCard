@@ -32,6 +32,39 @@
           "shown": true
         }
       ]
+    },
+    {
+      "title": "Disney Princesses",
+      "cards": [
+        {
+          "title": "Cinderella",
+          "description": "The story of a young girl who overcomes her hardships with the help of magic.",
+          "image": "img/sets/disney_princess/cinderella.png",
+          "url": "https://en.wikipedia.org/wiki/Cinderella",
+          "shown": false
+        },
+        {
+          "title": "Snow White",
+          "description": "The classic tale of a princess who befriends seven dwarfs to escape the evil queen.",
+          "image": "img/sets/disney_princess/snow_white.png",
+          "url": "https://en.wikipedia.org/wiki/Snow_White_and_the_Seven_Dwarfs",
+          "shown": true
+        },
+        {
+          "title": "Ariel",
+          "description": "A mermaid princess who dreams of living on land and falls in love with a human prince.",
+          "image": "img/sets/disney_princess/ariel.png",
+          "url": "https://en.wikipedia.org/wiki/The_Little_Mermaid_(film)",
+          "shown": true
+        },
+        {
+          "title": "Belle",
+          "description": "A young woman who finds herself falling in love with a Beast, who is cursed to live as a monster.",
+          "image": "img/sets/disney_princess/belle.png",
+          "url": "https://en.wikipedia.org/wiki/Beauty_and_the_Beast_(1991_film)",
+          "shown": true
+        }
+      ]
     }
   ]
 }
